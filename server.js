@@ -13,7 +13,7 @@ mongoose.connect(url).then(()=>{
     console.log("Data Base is connected")
 })
 corsOption={
-    origin:'http://localhost:3000'
+    origin:'https://ticketbookingwebsite-frontent.vercel.app/'
 }
 app.use(cors(corsOption))
 app.use('/user',userRouter)
